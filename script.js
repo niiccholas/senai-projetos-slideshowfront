@@ -2,7 +2,7 @@
 
 async function fetchImagens(){
 
-    const url = `http://localhost:3000/imagens`;
+    const url = `https://senai-projetos-slideshowback.onrender.com/imagens`;
 
     const response = await fetch(url);
     const data = await response.json();
