@@ -41,4 +41,20 @@ main{
     transition: opacity 0.5s ease;
     opacity: 1;
     border: 1px solid black
-};
+}
+
+footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: rgb(78, 182, 226);
+    text-decoration: none; /* remove o sublinhado */
+}
