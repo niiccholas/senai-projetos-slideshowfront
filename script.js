@@ -23,36 +23,30 @@ async function preencherImagens(){
 
     setInterval(() => {
 
-        if(contador == 4){
+
+        if(contador == data.length){
             contador = 0
         }
+
 
         fotoHTML.style.opacity = 0
 
         setTimeout(() => {
             
         fotoHTML.src = data[contador].foto
+
         legenda.textContent = data[contador].legenda
 
         fotoHTML.onload = () => {
             fotoHTML.style.opacity = 1;
         };
 
-        }, 200);
-
-        console.log(contador)
-
         contador++
 
-
-
+        }, 200);
         
     }, 3700);
 
-
-    console.log(data.length)
-
-    console.log(await fetchImagens())
 
 
 }
