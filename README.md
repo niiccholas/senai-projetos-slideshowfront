@@ -1,7 +1,7 @@
 <h1 align='center'>Slideshow de fotos no SENAI 📸</h1>
-
-![](https://file.garden/Zvl54HAo2CYmTnaT/202508041405%20(2).gif)
-
+<div align="center"><br>
+  <img align="center" src="https://file.garden/Zvl54HAo2CYmTnaT/202508041405%20(2).gif">
+</div>
 ---
 
 ## Sobre
