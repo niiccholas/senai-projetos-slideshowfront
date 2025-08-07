@@ -10,6 +10,31 @@ async function fetchImagens(){
     return data
 }
 
+function loadingPoints(){
+
+
+    const pontos = document.getElementById("loadingPoints")
+
+    // primeira maneira de fazer
+
+    let contador = 0 // começa em 0 para começar com 1 ponto (pois o contador vai aumentar)
+
+    setInterval(() => {
+
+
+        if(contador != 3){ // quando for 3 vai resetar pra 1
+            contador++
+        }else{
+            contador = 1
+        }
+
+        pontos.textContent = ".".repeat(contador) // string.repeat(quantidade de vezes)
+        
+    }, 700); // intervalo de meio segundo (500 milissegundos)
+
+}
+
+
 async function preencherImagens(){
 
     const data = await fetchImagens()
@@ -51,5 +76,12 @@ async function preencherImagens(){
 
 }
 window.onload = async function() {
+
+    loadingPoints()
+
+     const loading = document.getElementById('carregando')
     await preencherImagens()
+
+   loading.style.opacity = 0
+
 };
